@@ -1,0 +1,85 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Generated results and outputs
+# results/  # Uncomment to include results folder
+results_*/
+benchmark_results/
+test_results/
+test_results_*/
+test_*/
+visualizations/
+figures/
+*.csv
+*.json
+
+# Generated test matrices (created by deploy script)
+test_matrices/
+test_matrices.tar.gz
+test_matrices.zip
+test_matrices_fixed.tar.gz
+test_downloaded.tar.gz
+
+# Benchmark results
+benchmark_*.json
+
+# Temporary scripts (NOT in utils/)
+check_*.py
+!utils/**/check_*.py
+monitor.py
+!utils/monitor_progress.py
+watch_progress.py
+see_logs.py
+get_*.py
+clean_s3.py
+analyze_tabulation.py
+auto_monitor.ps1
+run_local.ps1
+run_ssm_command.py
+
+# Fonts
+*.otf
+*.ttf
+font.*
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Terraform
+infrastructure/.terraform/
+infrastructure/*.tfstate
+infrastructure/*.tfstate.backup
+infrastructure/*.tfstate.*.backup
+infrastructure/.terraform.lock.hcl
+infrastructure/terraform.tfvars
+infrastructure/.terraform.tfstate.lock.info
+
+# Temporary files
+COMMIT_*.txt
+estado_*.txt
+*.tmp
+*.bak
+font.otf
